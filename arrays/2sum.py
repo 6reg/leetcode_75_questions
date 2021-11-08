@@ -1,9 +1,15 @@
-def twoSum(lst, target):
-    hm = {}
-    for i, v in enumerate(lst):
-        diff = target - lst[i]
-        if diff in hm:
-            return [hm[v], i]
-        hm[i] = diff
+import sys
 
-print(twoSum([2, 7, 9], 9))
+def main():
+    lst = sys.argv[0]
+    target = sys.argv[1]
+    def twoSum(lst, target):
+        hm = {}
+        for i, v in enumerate(lst):
+            diff = target - lst[i]
+            print("diff", diff, "list[i]", lst[i])
+            if diff in hm:
+                return [hm[v], i]
+            hm[i] = diff
+
+
