@@ -8,4 +8,3 @@ def two_sum(nums, target)
 end
 
 puts two_sum([1,2,3,4], 7)
-
